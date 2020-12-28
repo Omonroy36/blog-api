@@ -62,7 +62,13 @@ class Category(db.Model):
             "id":self.id,
             "name":self.name,
         }
-    ""
+    def serializer(self):
+        return{
+            "id":self.id,
+            "name":self.name,
+        }
+
+
             
 
     
